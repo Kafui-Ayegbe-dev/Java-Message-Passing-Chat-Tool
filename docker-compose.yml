@@ -1,0 +1,136 @@
+version: "3.9"
+services:
+  net_java_server:
+    image: amazoncorretto
+    container_name: server
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/code_server
+    working_dir: /code_server
+    command: ["/bin/bash"]
+    stdin_open: true
+    tty: true
+    
+
+  net_java_c1:
+    image: amazoncorretto
+    container_name: c1
+    ports:
+      - "8081:8080"
+    volumes:
+      - .:/code_c1
+    working_dir: /code_c1
+    command: ["/bin/bash"]
+    stdin_open: true
+    tty: true
+
+
+  net_java_c2:
+    image: amazoncorretto
+    container_name: c2
+    ports:
+      - "8082:8080"
+    volumes:
+      - .:/code_c2
+    working_dir: /code_c2
+    command: ["/bin/bash"]
+    stdin_open: true
+    tty: true
+
+  # net_java_c3:
+  #   image: amazoncorretto
+  #   container_name: c3
+  #   ports:
+  #     - "8083:8080"
+  #   volumes:
+  #     - .:/code_c3
+  #   working_dir: /code_c3
+  #   command: ["/bin/bash"]
+  #   stdin_open: true
+  #   tty: true
+
+  # net_java_c4:
+  #   image: amazoncorretto
+  #   container_name: c4
+  #   ports:
+  #     - "8084:8080"
+  #   volumes:
+  #     - .:/code_c4
+  #   working_dir: /code_c4
+  #   command: ["/bin/bash"]
+  #   stdin_open: true
+  #   tty: true
+
+  # net_java_c5:
+  #   image: amazoncorretto
+  #   container_name: c5
+  #   ports:
+  #     - "8085:8080"
+  #   volumes:
+  #     - .:/code_c5
+  #   working_dir: /code_c5
+  #   command: ["/bin/bash"]
+  #   stdin_open: true
+  #   tty: true
+
+  
+  # net_java_c6:
+  #   image: amazoncorretto
+  #   container_name: c6
+  #   ports:
+  #     - "8086:8080"
+  #   volumes:
+  #     - .:/code_c6
+  #   working_dir: /code_c6
+  #   command: ["/bin/bash"]
+  #   stdin_open: true
+  #   tty: true
+
+  # net_java_c7:
+  #   image: amazoncorretto
+  #   container_name: c7
+  #   ports:
+  #     - "8087:8080"
+  #   volumes:
+  #     - .:/code_c7
+  #   working_dir: /code_c7
+  #   command: ["/bin/bash"]
+  #   stdin_open: true
+  #   tty: true
+
+  # net_java_c8:
+  #   image: amazoncorretto
+  #   container_name: c8
+  #   ports:
+  #     - "8088:8080"
+  #   volumes:
+  #     - .:/code_c8
+  #   working_dir: /code_c8
+  #   command: ["/bin/bash"]
+  #   stdin_open: true
+  #   tty: true
+
+  # net_java_c9:
+  #   image: amazoncorretto
+  #   container_name: c9
+  #   ports:
+  #     - "8089:8080"
+  #   volumes:
+  #     - .:/code_c9
+  #   working_dir: /code_c9
+  #   command: ["/bin/bash"]
+  #   stdin_open: true
+  #   tty: true
+
+  # net_java_c10:
+  #   image: amazoncorretto
+  #   container_name: c10
+  #   ports:
+  #     - "8090:8080"
+  #   volumes:
+  #     - .:/code_c10
+  #   working_dir: /code_c10
+  #   command: ["/bin/bash"]
+  #   stdin_open: true
+  #   tty: true

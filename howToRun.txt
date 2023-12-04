@@ -1,0 +1,22 @@
+
+--- File and Folder Structure ---
+
+- docker-compose.yml
+- Client.java
+- ChatServer.java
+- howToRun.txt
+
+
+--- How to run ---
+- docker-compose up -d
+
+Server instructions:
+- The server must be run first
+- docker attach server
+- javac ChatServer.java
+- java ChatServer
+
+Client(s) instructions:
+- docker attach c(1...10)
+- javac Client.java
+- java Client
